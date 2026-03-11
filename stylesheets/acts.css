@@ -20,46 +20,53 @@ h3 > div:nth-child(2) {
 }
 h4 {
 	margin: 0 0 0.5em;
+	font-variant: small-caps;
+}
+h4.secPart > span:first-child::before {
+	content: "Part ";
+
+}
+h4.secPart > span:first-child {
+	min-width: 8%;
 }
 h4 > span:first-child {
 	min-width: 6%;
 	float: left;
 }
+.l1 > p, .l2 > p, .l3 > p, .l4 > p {
+	margin-top: 0;
+	margin-bottom: 0.2em;
+}
+.l1 > p > span, .l2 > p > span, .l3 > p > span, .l4 > p > span {
+	display: inline-block;
+}
+.l1 > p > span:first-child, .l2 > p > span:first-child, .l3 > p > span:first-child, .l4 > p > span:first-child {
+	margin-right: 2%;
+	text-align: right;
+}
 .l1 > p > span:first-child {
 	width: 8%;
-	float: left;
-	text-align: right;
 }
 .l1 > p > span:last-child {
 	width: 90%;
-	float: right;
 }
 .l2 > p > span:first-child {
 	width: 15%;
-	float: left;
-	text-align: right;
 }
 .l2 > p > span:last-child {
 	width: 83%;
-	float: right;
 }
 .l3 > p > span:first-child {
 	width: 22%;
-	float: left;
-	text-align: right;
 }
 .l3 > p > span:last-child {
 	width: 76%;
-	float: right;
 }
 .l4 > p > span:first-child {
 	width: 29%;
-	float: left;
-	text-align: right;
 }
 .l4 > p > span:last-child {
 	width: 69%;
-	float: right;
 }
 .part p > span:first-child::before {content: "(";}
 .part p > span:first-child::after {content: ")";}
