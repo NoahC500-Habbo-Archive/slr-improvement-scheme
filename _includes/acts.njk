@@ -13,7 +13,7 @@ title:
 </div>
 
 <p id="longTitle" style="margin: 1em 0 0">{{ longTitle }}</p>
-<p id="enactingDate" style="margin: 0 0 1em">[{{ enactingDate }}]</p>
+<p id="enactingDate" style="margin: 0 0 1em">[{{ enactingDate.toISOString().substr(0,10) }}]</p>
 <p id="enactingClause" style="margin: 1em 0 2em">{{ enactingClause }}</p>
 
 {{ content | safe }}
