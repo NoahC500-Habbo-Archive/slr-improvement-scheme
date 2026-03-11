@@ -1,3 +1,5 @@
 body {
     font-family: proportional;
+    max-width: 70%;
+    margin-left: 15%;
 }
