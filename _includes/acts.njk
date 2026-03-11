@@ -1,0 +1,19 @@
+---
+layout: base
+tags: act
+title:
+---
+<link rel="stylesheet" href="/stylesheets/acts.css">
+
+<div style="display: flex;"><img style="margin: 0 auto" width="20%" src="/public/houseLogoColour.png"></div>
+
+<div id="title">
+	<h1>{{ actTitle }}</h1>
+	<h2>{{ actRef }}</h2>
+</div>
+
+<p id="longTitle" style="margin: 1em 0 0">{{ longTitle }}</p>
+<p id="enactingDate" style="margin: 0 0 1em">[{{ enactingDate }}]</p>
+<p id="enactingClause" style="margin: 1em 0 2em">{{ enactingClause }}</p>
+
+{{ content | safe }}

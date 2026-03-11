@@ -1,0 +1,128 @@
+body {
+    margin-bottom: 1em;
+}
+h1 {
+	margin: 1em 0;
+	font-size: 1.5em;
+}
+h2 {
+	margin: 0 0 1em 0;
+	font-size: 1em;
+}
+h3 {
+	font-size: 0.9em;
+	font-variant: small-caps;
+	margin: 0 0 0.25em;
+}
+h3 > div:nth-child(2) {
+	font-weight: normal;
+	margin: 0 0 1em;
+}
+h4 {
+	margin: 0 0 0.5em;
+}
+h4 > span:first-child {
+	min-width: 6%;
+	float: left;
+}
+.l1 > p > span:first-child {
+	width: 8%;
+	float: left;
+	text-align: right;
+}
+.l1 > p > span:last-child {
+	width: 90%;
+	float: right;
+}
+.l2 > p > span:first-child {
+	width: 15%;
+	float: left;
+	text-align: right;
+}
+.l2 > p > span:last-child {
+	width: 83%;
+	float: right;
+}
+.l3 > p > span:first-child {
+	width: 22%;
+	float: left;
+	text-align: right;
+}
+.l3 > p > span:last-child {
+	width: 76%;
+	float: right;
+}
+.l4 > p > span:first-child {
+	width: 29%;
+	float: left;
+	text-align: right;
+}
+.l4 > p > span:last-child {
+	width: 69%;
+	float: right;
+}
+.part p > span:first-child::before {content: "(";}
+.part p > span:first-child::after {content: ")";}
+#title, h3 {
+	text-align: center;
+}
+#enactingDate {
+	text-align: right;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+
+.amendment::before, .amendmentStart::before {
+	font-weight: bolder;
+	font-size: 1.4em;
+	content: "[";
+}
+.amendment::after, .amendmentEnd::before {
+	font-weight: bolder;
+	font-size: 1.4em;
+	content: "]";
+}
+.citation {
+	vertical-align: top;
+	position: relative;
+	font-weight: bold;
+	padding: 0 0.1em;
+	color: black;
+	font-size: .8em
+}
+
+
+.refTable {
+    clear: both;
+    margin: 0 0 1em 0;
+    border: solid #C2C2C2 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(194, 194, 194);
+    border-bottom: 4px solid #C2C2C2;
+    background-color: #FFF;
+    color: #000;
+    padding: 7px;
+    text-align: left;
+}
+.refTable > div:first-child {
+    margin: 0.5em 0 0 0;
+    padding: 0.5em 0 0 0;
+    font-weight: bold;
+}
+.refTable > div > p > a {
+    min-width: 6%;
+    float: left;
+}
+.refTable > div > p > span {
+    width: 90%;
+    display: inline-block;
+}
+
+.affects {
+    position: relative;
+    left: calc(13% - 1.5em);
+}
